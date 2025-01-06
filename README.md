@@ -32,6 +32,8 @@ git clone https://github.com/nlohmann/json.git
 - **StochasticOscillation:** The Stochastic Oscillator value.
 - **BuySignal:** Indicates whether the algorithm recommends buying (BUY) or not (NO BUY).
 
+The data store file is currently empty, as upon initialisation of the program, it will create the headers if there are none present.
+
 ## Core Algorithms
 - **200 SMA Calculation:** Uses the GPU to calculate the average of the last 200 closing prices.
 - **80 EMA Calculation:** Applies an exponentially weighted smoothing factor to recent prices.
