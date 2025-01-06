@@ -18,7 +18,7 @@ git clone https://github.com/nlohmann/json.git
 
 ## Features
 - **GPU Acceleration:** Computes technical indicators on the GPU for faster performance.
-- **Windows API Integration:** Fetches stock market data directly using the Windows API and Alpha Vantage (https://www.alphavantage.co/).
+- **Windows API Integration:** Fetches stock market data directly using the Windows API and Alpha Vantage https://www.alphavantage.co/.
 - **Automated Buy Signals:** Generates buy signals based on a combination of SMA, EMA, and Stochastic Oscillator thresholds.
 - **Data Logging:** Outputs calculations and buy signals to a CSV file for record-keeping and analysis.
 
