@@ -43,4 +43,6 @@ A buy signal is generated when:
 2. The Stochastic Oscillator is below 20 (oversold condition).
 3. The Stochastic Oscillator is trending upward.
 
+[Link to Trading Output](./tradingOutput.txt)
+
 
