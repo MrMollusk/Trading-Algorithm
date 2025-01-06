@@ -1,6 +1,6 @@
 # Trading Algorithm with GPU Acceleration
 
-This program is designed to run on Windows machines and utilizes the Windows API for fetching stock data. It leverages Nvidia CUDA to accelerate the calculation of several technical indicators, including the 200Simple Moving Average (SMA), 80 Exponential Moving Average (EMA), and the Stochastic Oscillator.
+This program is designed to run on Windows machines and utilizes the Windows API for fetching stock data. It leverages Nvidia CUDA to accelerate the calculation of several technical indicators, including the 200 Simple Moving Average (SMA), 80 Exponential Moving Average (EMA), and the Stochastic Oscillator.
 
 ## Prerequisites
 
