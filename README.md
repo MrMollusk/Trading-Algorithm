@@ -25,7 +25,7 @@ git clone https://github.com/nlohmann/json.git
 ## Uses
 1. The program fetches the daily time series data for the stock "IBM" by default. If you wish to analyze other stocks, change the "IBM" symbol to another company that AlphaVantage Supports.
 
-2. The data store file (TradingOutput.txt) will contain:
+2. The data store file [TradingOutput.txt](./tradingOutput.txt) will contain:
 - **CurrentDate:** The date of the calculation.
 - **200SMA:** The 200-day Simple Moving Average.
 - **80EMA:** The 80-day Exponential Moving Average.
@@ -43,6 +43,5 @@ A buy signal is generated when:
 2. The Stochastic Oscillator is below 20 (oversold condition).
 3. The Stochastic Oscillator is trending upward.
 
-[Link to Trading Output](./tradingOutput.txt)
 
 
