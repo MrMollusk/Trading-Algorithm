@@ -12,7 +12,7 @@ This program is designed to run on Windows machines and utilizes the Windows API
 
 Ensure you have CUDA set up and nlohmann/json installed via Git:
 
-```bash
+```
 git clone https://github.com/nlohmann/json.git
 ```
 
