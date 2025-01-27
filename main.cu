@@ -14,11 +14,11 @@ int main() {
     std::string url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&outputsize=full&apikey=YOURAPIKEY";
     std::string response = fetchApiData(url);
 
-    if (url.find("YOURAPIKEY") != std::string::npos) { // Check if "YOURAPIKEY" exists in the URL
+    if (url.find("YOURAPIKEY") != std::string::npos) { //Check if "YOURAPIKEY" exists in the URL
     std::cout << "Change the API Key" << std::endl;
     }
 
-    // Gets first 200 close prices from API JSON
+    //Gets first 200 close prices from API JSON
     std::vector<float> h_close = jsonNumberExtractor(jsonExtraction(response, "4. close"), 200);
     std::vector<float> h_high = jsonNumberExtractor(jsonExtraction(response, "2. high"), 200);
     std::vector<float> h_low = jsonNumberExtractor(jsonExtraction(response, "3. low"), 200);
