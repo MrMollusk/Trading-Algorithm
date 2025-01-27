@@ -5,6 +5,7 @@ This program is designed to run on Windows machines and utilizes the Windows API
 ## Prerequisites
 
 - **Platform**: Windows OS.
+- **C++ Compiler:** A modern C++ compiler (e.g., GCC, Clang, or MSVC).
 - **CUDA**: Nvidia GPU with CUDA support for hardware acceleration.
 - **Libraries**:
     - [nlohmann/json](https://github.com/nlohmann/json) for JSON parsing.
