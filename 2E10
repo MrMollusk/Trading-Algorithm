@@ -1,0 +1,60 @@
+
+// CHANGE THESE TO MATCH YOUR WIRING, THEN DELETE THE PREVIOUS "#error" LINE
+const int LEYE = 12;
+const int REYE = A3;
+
+//Low = 0
+//High = 1
+
+int L_temp = 0;
+int R_temp = 0;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode( LEYE, INPUT );
+  pinMode( REYE, INPUT );
+}
+
+
+
+void loop() {
+  if( digitalRead( LEYE ) == HIGH ){
+    L_temp = 1;
+  }
+  else if( digitalRead( LEYE ) == LOW ){
+    L_temp = 0;
+  }
+  else if( digitalRead( REYE ) == HIGH ){
+    R_temp = 1;
+  }
+  else if( digitalRead( REYE ) == LOW ){
+    R_temp = 0;
+  }
+
+
+  if( digitalRead( LEYE ) != L_temp ){
+    Serial.println(L_temp);
+    L_temp = 1;
+    delay(1000);
+  }
+  else if( digitalRead( LEYE ) != L_temp){
+    Serial.println(L_temp);
+    L_temp = 0;
+    delay(1000);
+  }
+  else if( digitalRead( REYE ) != R_temp ){
+    Serial.println(R_temp);
+    R_temp = 1;
+    delay(1000);
+  }
+  else if( digitalRead( REYE ) != R_temp ){
+    Serial.println(R_temp);
+    R_temp = 0;
+    delay(1000);
+  }
+  else{
+    Serial.print("");
+  }
+}
+
