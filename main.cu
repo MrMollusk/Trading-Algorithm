@@ -11,10 +11,10 @@
 // d_ = on GPU, h_ = on CPU
 
 int main() {
-    std::string url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&outputsize=full&apikey=YOURAPIKEY";
+    std::string url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&outputsize=full&apikey=APIKEY";
     std::string response = fetchApiData(url);
 
-    if (url.find("YOURAPIKEY") != std::string::npos) { //Check if "YOURAPIKEY" exists in the URL
+    if (url.find("APIKEY") != std::string::npos) { //Check if "APIKEY" exists in the URL
     std::cout << "Change the API Key" << std::endl;
     }
 
