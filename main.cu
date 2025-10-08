@@ -45,7 +45,6 @@ int main() {
         std::cout << "No buy signal" << "\n";
     }
 
-    //Write the results to a CSV file, including the buy signal
     writeToCsv(sma200, ema80, currentStochastic, buySignal);
 
     return 0;
